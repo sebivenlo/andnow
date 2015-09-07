@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo remove all latex disposables
+
+rm -f  *.amc *.aux *.log *~ *.out *.toc *.snm *.nav *.vrb *.bbl *.blg *.url 
+rm -f $(basename $(pwd))*.pdf
+rm -fr ./out
+
+

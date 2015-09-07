@@ -11,9 +11,10 @@
  - continuous build 
  - coverage
   - pit testing (test mutations)
-  - working with visual paradigm.
-  - heuristics to choose test approach.
-  - test strategies and finding test values.
+ - working with visual paradigm.
+ - heuristics to choose test approach.
+ - test strategies and finding test values.
+
 
 
    
