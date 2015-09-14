@@ -2,6 +2,8 @@
 
  - Docker+Devops: Industry is moving away from seperated developement and
    operations (deployment).
+ - JavaFx simple exercise for java1. Clock or yahtzee.
+
  - Wildfly as standard container.
  - arquilian for complete testing (backend, frontend, unit,
    integration and system testing).
