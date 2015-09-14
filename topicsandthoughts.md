@@ -12,7 +12,7 @@
  - just tables (vs orm) easier use of jdbc
  - continuous build (prj2 using docker)
  - coverage and tools
- - pit testing (test mutations)
+ - pit testing (test mutations) - Ennyo Feller, Martijn Bonajo
  - working with visual paradigm. (mod1, sen1, prj2)
  - heuristics to choose test approach (unit vs manual). (sen1)
  - test strategies and finding test values. (sen1
