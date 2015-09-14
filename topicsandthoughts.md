@@ -15,4 +15,4 @@
  - working with visual paradigm. (mod1, sen1, prj2)
  - heuristics to choose test approach (unit vs manual). (sen1)
  - test strategies and finding test values. (sen1
- - intro to dependency injection (as java2 topic)
+ - intro to dependency injection (as java2 topic) [Jonas Verhoelen]
