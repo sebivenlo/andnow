@@ -5,16 +5,16 @@ new tegnologies in the field of software development methods, paradigms and tool
 
 The participating students in autumn 2015 are:
 
- - Martijn Bonajo
- - Borian Brückner
- - Ennyo Feller
- - Ron Gebauer
- - Gonzalez Miguel
- - Nils Heyer
- - Jan Kerkenhoff
- - Christian Neumann
- - Jonas Verhoelen
- - Maximilian Walter
+ - Martijn Bonajo (LasershowJack)
+ - Borian Brückner (borian)
+ - Ennyo Feller (Ennyo)
+ - Ron Gebauer (Mazorius)
+ - Gonzalez Miguel (MyRealityCoding)
+ - Nils Heyer (TechLogic)
+ - Jan Kerkenhoff (kerko)
+ - Christian Neumann (C0nvict42)
+ - Jonas Verhoelen (JonasPriest)
+ - Maximilian Walter (ko08ok)
 
 The teachers are Pieter van den Hombergh (homberghp) and Ferd van Odenhoven.
 
