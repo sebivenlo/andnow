@@ -6,7 +6,7 @@
  - Wildfly as standard container.
  - arquilian for complete testing (backend, frontend, unit,
    integration and system testing). [Nils Heyer, Christian Neumann]
- - test driven/ behaviour driven development [Miguel Gonzalez, Jan Kerkenhoff]
+ - test driven / behaviour driven development [Miguel Gonzalez, Jan Kerkenhoff]
  - domain specific languages for requirements and testing
  - just tables (vs orm) easier use of jdbc
  - continuous build (prj2 using docker)
