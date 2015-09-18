@@ -1,0 +1,9 @@
+#!/bin/bash
+mkdir -p out
+texfile=material.tex
+if [ -e Makefile ] ; then
+    make $*
+else
+    pdflatex -shell-escape -jobname=$(basename $(pwd)) -output-directory out material.tex
+    cp out/*.pdf .
+fi
