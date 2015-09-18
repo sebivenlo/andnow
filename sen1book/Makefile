@@ -8,4 +8,7 @@ sebibook.pdf: main.tex */material.tex
 	$(LATEX) -shell-escape -jobname=sebibook -output-directory out $(TEX_OPTIONS) main.tex
 	cp out/sebibook.pdf .
 
+clean:
+	texclean
+	rm sebibook.pdf
 
