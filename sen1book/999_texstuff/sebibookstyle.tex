@@ -9,7 +9,7 @@ a4paper]{geometry}
 \usepackage{rotating}
 \usepackage{wrapfig}
 \usepackage{microtype}
-\usepackage{newfloat}
+\usepackage[within=none]{newfloat}
 \usepackage{caption}
 \usepackage{multicol}
 \usepackage{mdwlist}
@@ -28,8 +28,8 @@ a4paper]{geometry}
 
 
 %% floattextbox floating 
-\DeclareFloatingEnvironment[fileext=tbx,placement={!ht},name=Frame]{floattextbox}
-\captionsetup[floattextbox]{labelfont=bf}
+\DeclareFloatingEnvironment[fileext=tbx,name={Side Note},within=none]{floattextbox}
+\captionsetup[floattextbox]{labelfont=bf,labelformat=empty}
 
 \newenvironment{textbox}[1]{%
   \begin{floattextbox}[tb]%

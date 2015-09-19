@@ -2,7 +2,7 @@
 \documentclass[\docroot/main]{subfiles}
 \begin{document}
 \chapter{Run Baby, Run}
-\begin{wrapfigure}{r}{.45\textwidth}\rotatebox{7}{\shadowbox{\begin{minipage}{.45\textwidth}%
+\begin{wrapfigure}{R}{.4\textwidth}\rotatebox{7}{\shadowbox{\begin{minipage}{.4\textwidth}%
   \includegraphics[width=\textwidth]{\docroot/998_figures/mad-science.jpg}
   \caption*{Let's experiment}
 \end{minipage}}
@@ -25,24 +25,24 @@ promise  reuse on several levels:
 \item reuse of services
 \end{itemize*}
 \end{multicols}
-Not how about the approach: stick it together and see where it blows
+Now where leaves that the approach: stick it together and see where it blows
 up? You at least want the ingredients in your ``soup'' to be sound and
 healthy and fit for their purpose. Because you do not build up the
 complete application from scratch, but rather will assemble it from
 ready made and available and some new parts you add yourselves, you
 want all of those ingredients to have a quality you can rely on.
 
-\begin{textbox}{(Un)Invited Guest; Lets Break It}%{L}{.3\textwidth}
+\begin{textbox}{(Un)Invited Guest; Let's Break It}%{L}{.3\textwidth}
   A very serious problem is created by the uninvited guests. To many
   software tests only involve the intended use, and never the
   unintended use. 
 
   Software may break when it gets input that it does know
   how to handle, or if fed with input which is forged to trigger
-  unwanted effects. A well know, but by no means the only examples are
-  SQL-injections, cross site scripting attacks. SQL-injections depend
-  on the input being (indirectly) interpreted, leading to modified sql
-  statements, which can cause havoc in the application and or database layer.
+  unwanted effects. Well know, but by no means the only example is the so called
+  SQL-injection. SQL-injections depend
+  on the input being (indirectly) interpreted, leading to altered SQL-statements, 
+  which can cause havoc in the application and or database layer.
 \end{textbox}
 
 \section{Software Quality}
@@ -61,43 +61,39 @@ This means that the quality of the software is measured in terms of
 \end{itemize}
 
 \subsection{Testing Is War}
-\begin{wrapfigure}{l}{.45\textwidth}\rotatebox{-4}{\shadowbox{\begin{minipage}{.4\textwidth}%
+\begin{wrapfigure}{L}{.4\textwidth}\rotatebox{-4}{\shadowbox{\begin{minipage}{.35\textwidth}%
   \includegraphics[width=\textwidth]{\docroot/998_figures/carcrashtest.jpg}
   \caption*{Car passengers protection test}
 \end{minipage}}
 }
 \end{wrapfigure}
-Testing is different from trying. Testing is war. In mechanical
+Testing is different from \textit{trying}. Testing is war. In mechanical
 engineering a strength test means abusing the material until it breaks. Same in the
-modern card industry, where they run brand new cars into concrete walls
+modern car industry, where they run brand-new cars into concrete walls
 or into each other, to see how that car deals with unwanted circumstances.
 They test by intending to break it, to ensure that the failure is
 sufficiently graceful to cause no harm to passenger or innocent bystander.
 
-Of course, ``normal'' usage is also tested, to ensure that the user
-experience is what may be expected of the intended quality level. In
-the car industry it can go as far as testing the sound of the doors closing.
+\marginpar{War: Aim for maximum destruction}
 
-%keep away from  wrap
-%\vspace{4\baselineskip}
+Of course, ``normal'' use is also tested, to ensure that the user
+experience is what may be expected of the intended quality level. Like in the car industry, where it can go as far as testing the sound of the doors closing.
+
 So should software testers. 
-%\begin{multicols}{2}
 \begin{itemize*}
-\item Ensure that the software is fit for its
-purpose,
+\item Ensure that the software is fit for its purpose,
 \item but also survives un-purposeful (ab)use.
 \end{itemize*}
-%\end{multicols}
 In the later case, in particular the survival, safety and security of the environment is
 paramount. All to often a weak spot or vulnerability in an
 application or library exposes risk to the operating system, files or
 file systems of the system the application runs on. Example are
 numerous. It might come unexpected, but a picture (e.g. a jpeg file)
-can be forged to make an application crash or worse, execute alien, malicious code.
+can be forged to make an picture handling application crash or worse, execute alien, malicious code, hidden inside the picture.
 \section{Analyse and Design Top Down, Assemble Bottom Up}
 todo
 
-\subsection{Allow Maximise Ignorance}
+\subsection{Allow Maximum Ignorance}
 One of the important design rule in good software design is \textit{proper
 encapsulation}, meaning that you hide the implementation for the
 user\footnote{The programmer using a class etc.}, assuming that she
@@ -107,5 +103,14 @@ provided to said user.
 
 This puts the plight to ensure proper working of the component in all
 circumstances on the implementer of the component. Too often 
+
+\section{Types of tests}
+explorative testing.
+Unit tests
+boundary tests
+integration tests.
+dynamic tests, static test.
+Review types.
+
 
 \end{document}
