@@ -5,7 +5,8 @@ a4paper]{geometry}
 \usepackage{currfile}
 \usepackage{ifthen}\newboolean{mainfile}\setboolean{mainfile}{true}
 \usepackage[english]{babel}  
-\usepackage[utf8]{inputenc} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T5]{fontenc}
 \usepackage{rotating}
 \usepackage{wrapfig}
 \usepackage{microtype}
@@ -39,3 +40,5 @@ a4paper]{geometry}
       {\end{mdframed}\end{floattextbox}
 }
 
+\providecommand\Frenchq[1]{\flq{}#1\frq{}}
+\providecommand\Frenchqq[1]{\flqq{}#1\frqq{}}

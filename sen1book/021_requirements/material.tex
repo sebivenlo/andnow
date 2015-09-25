@@ -1,0 +1,67 @@
+\providecommand\docroot{../}
+\documentclass[\docroot/main]{subfiles}
+\begin{document}
+\chapter{Finding Requirements}
+In software engineering (and systems engineering), a functional
+requirement defines a function of a system and its components. A
+function is described as a set of inputs, the behaviour, and outputs
+(see also software).
+
+Knowing \textbf{what} the application should do: Functional requirements.
+examples: specification of computation, behaviour, the function.
+
+wikipedia lemma functional requirement
+\begin{textbox}{Requirements, Functional or Non Functional (Wikipedia)}
+  Functional requirements may be calculations, technical details, data
+  manipulation and processing and other specific functionality that
+  define what a system is supposed to accomplish. Behavioural
+  requirements describing all the cases where the system uses the
+  functional requirements are captured in use cases. Functional
+  requirements are supported by non-functional requirements (also known
+  as quality requirements), which impose constraints on the design or
+  implementation (such as performance requirements, security, or
+  reliability). Generally, functional requirements are expressed in the
+  form ``system must do \Frenchq{requirement}'', while non-functional
+  requirements are ``system shall be \Frenchq{requirement}''. The plan for
+  implementing functional requirements is detailed in the system
+  design. The plan for implementing non-functional requirements is
+  detailed in the system architecture.
+
+
+\end{textbox}
+
+\textbf{How} it does it: mostly Non Functional.
+Examples are:
+\begin{multicols}{2}
+\begin{itemize*}
+\item programming language,
+\item environment (os)
+\item architecture
+\item speed
+\end{itemize*}
+\vfill\columnbreak
+but also:
+\begin{itemize*}
+\item engineering aspects such as:
+  \begin{itemize}
+  \item maintainability  (ilities)
+  \item correctness
+  \end{itemize}
+\end{itemize*}
+\end{multicols}
+Note that the Non Functional Requirements  are about choice for a
+solution. That is easy to see, because the Functional Requirements
+"give no choice". Another way of saying this is: There may be many (= choice)
+solutions to a problem, as long as the outcome (function) is right.
+
+Requirements engineering is a separate course, in which you learn the
+techniques required to squeeze the requirements, functional and non
+functional, from your customer, even when he does not understand
+software engineering or information technology. The bottom line in
+that course is: Apply gentle pressure when squeezing, but be persistent. 
+
+Sometimes you will find that the distinction between Functional and
+Non Functional is a bit blurry. Do not start a holy war over this
+distinction. If it is wanted, it is requirement. Note that  period in
+the previous sentence is a bit thicker.
+\end{document}

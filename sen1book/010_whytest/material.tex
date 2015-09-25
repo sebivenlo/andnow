@@ -45,6 +45,11 @@ want all of those ingredients to have a quality you can rely on.
   which can cause havoc in the application and or database layer.
 \end{textbox}
 
+\section{Complexity}
+Applying limited time to obtain insight into a complex system will only provide limited insight.
+Most naturally this will lead to imperfect systems and errors.\cite{vig2006}.
+.
+
 \section{Software Quality}
 When you cook, you want the ingredients to be healthy and wholesome.
 You want to be able or learn how to process them. You want them to
@@ -90,11 +95,16 @@ application or library exposes risk to the operating system, files or
 file systems of the system the application runs on. Example are
 numerous. It might come unexpected, but a picture (e.g. a jpeg file)
 can be forged to make an picture handling application crash or worse, execute alien, malicious code, hidden inside the picture.
-\section{Analyse and Design Top Down, Assemble Bottom Up}
-todo
 
+\section{Analyse and Design Top Down, Assemble Bottom Up}
+Developing software invariably starts with proper understanding of the problem to be solved.
+All to often, proper analysis is skipped, because the developer~\footnote{Or his representative} are biased by a \textit{hammer and nail} view on the world. If my tool is a hammer, all problems tend to look like a nail.
+
+% do not yet know where to place this.
+% encapsulation also promotes ignorance, which much be allowed and
+% acceptable when using a library.
 \subsection{Allow Maximum Ignorance}
-One of the important design rule in good software design is \textit{proper
+One of the important rules in good software design is \textit{proper
 encapsulation}, meaning that you hide the implementation for the
 user\footnote{The programmer using a class etc.}, assuming that she
 honours the pre- and post conditions, by reading and understanding the
@@ -102,11 +112,16 @@ public \textit{documentation}, which can be used as the interface
 provided to said user.
 
 This puts the plight to ensure proper working of the component in all
-circumstances on the implementer of the component. Too often 
+circumstances on the implementer of the component.
 
 \section{Types of tests}
-explorative testing.
-Unit tests
+% also approaches to testing
+% muste elaborate and give proper place.
+
+exploratory testing formally known as ad hoc testing.
+small exposure in later chapter.
+Unit tests to test single or a few related classes. The used
+technology in e.g. JUnit  is often the foundation of other testing frameworks
 boundary tests
 integration tests.
 dynamic tests, static test.
@@ -114,3 +129,4 @@ Review types.
 
 
 \end{document}
+
