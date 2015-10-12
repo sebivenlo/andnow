@@ -16,5 +16,5 @@ The participating students in autumn 2015 are:
  - Jonas Verhoelen (JonasPriest)
  - Maximilian Walter (ko08ok)
 
-The teachers are Pieter van den Hombergh (homberghp) and Ferd van Odenhoven.
+The teachers are Pieter van den Hombergh (homberghp) and Ferd van Odenhoven (odenhovenf).
 
