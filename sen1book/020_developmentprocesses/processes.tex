@@ -1,0 +1,147 @@
+\section{Development Processes}
+
+In software engineering, a software development methodology (also known
+as a system development methodology, software development life cycle,
+software development process, software process) is a division of
+software development work into distinct phases (or stages) containing
+activities with the intent of \textbf{better planning and management}. It is
+often considered a subset of the systems development life cycle. The
+methodology may include the pre-definition of specific deliverables
+and artifacts that are created and completed by a project team to
+develop or maintain an application. \cite{wiki:sdp}
+
+Processes models are just that, a simplification of reality. 
+This means that some methodologies address some aspects better then
+others, but none is optimal in all cases.
+
+For starters, the main distinctions we care to consider here are known under the
+name the \textbf{``waterfall model''}, \textbf{``iterative and''} and  \textbf{``agile methods''}.
+Other methodologies are relevant, but can be considered refinements of
+these extremes.
+
+\subsection{Waterfall model}
+
+The waterfall model was first formally described by Winston W. Royce.
+He introduced it as a model with flaws, and did not even coin the
+name, but that is what stuck. 
+The concept is that you divide the whole software creation process
+into different phases and have each of these phases produce artefacts to be
+used in the next phase, until the product of the project is
+production.
+
+The main phases are
+\begin{multicols}{2}
+  \begin{enumerate*}
+  \item Requirements
+  \item Analysis
+  \item Design
+  \item Implementation
+  \item Testing
+  \item Deployment
+  \item Maintenance
+  \end{enumerate*}
+\end{multicols}
+
+One of the key ideas is that each the process needs different competences
+in the different phases and also different head counts in these phases.
+
+Thus the waterfall model maintains that one should move to a phase only when its preceding phase is reviewed and verified.
+
+One should make a distinction between the project phases and the
+software life cycle. Important is to note that a project typically
+stops with delivery. This is because projects are, or should be time
+bound. The software life cycle includes use, implying  maintenance
+of the product,  and is therefor typically not time bound.
+
+The basic principles are:
+\begin{itemize}
+\item Project is divided into sequential phases, with some overlap and splashback acceptable between phases.
+\item Emphasis is on planning, time schedules, target dates, budgets and implementation of an entire system at one time.
+\item Tight control is maintained over the life of the project via
+  extensive written documentation, formal reviews, and
+  approval/signoff by the user and information technology management
+  occurring at the end of most phases before beginning the next
+  phase. 
+\end{itemize} \cite{wiki:spd}
+
+The waterfall model is considered a traditional approach. 
+A strict waterfall approach discourages revisiting and revising any prior phase
+once it is complete. 
+
+\subsubsection{Waterfall, Supporting Arguments}
+Time spent early in the software production cycle can reduce costs at
+later stages. For example, a problem found in the early stages (such
+as requirements specification) is cheaper to fix than the same bug
+found later on in the process (by a factor of 50 to 200).
+
+In common practice, waterfall methodologies result in a project
+schedule with 20–40\% of the time invested for the first two phases,
+30–40\% of the time to coding, and the rest dedicated to testing and
+implementation. The actual project organization needs to be highly
+structured. Most medium and large projects will include a detailed set
+of procedures and controls, which regulate every process on the
+project.
+
+A further argument for the waterfall model is that it places emphasis
+on documentation (such as requirements documents and design documents)
+as well as source code. In less thoroughly designed and documented
+methodologies, knowledge is lost if team members leave before the
+project is completed, and it may be difficult for a project to recover
+from the loss. If a fully working design document is present (as is
+the intent of Big Design Up Front and the waterfall model), new team
+members or even entirely new teams should be able to familiarise
+themselves by reading the documents.
+
+\textbf{The waterfall model provides a structured approach;} the model itself
+progresses linearly through discrete, easily understandable and
+explainable phases and thus is easy to understand; it also provides
+easily identifiable milestones in the development process. It is
+perhaps for this reason that the waterfall model is used as a
+beginning example of a development model in many software engineering
+texts and courses.
+
+The waterfall is well suited for processes that want to outsource one
+or more of the project phases. Because the documentation is considered
+of high value, it is also the vehicle to share knowledge across the
+phases.
+
+\subsubsection{Waterfall, Criticism}
+It is argued that the waterfall model can be suited to projects where
+requirements and scope are fixed, the product itself is firm and
+stable, and the technology is clearly understood.
+\begin{itemize*}
+\item Clients may not know exactly what their requirements are before they
+see working software and so change their requirements, leading to
+redesign, redevelopment, and retesting, and increased costs. 
+\item Designers may not be aware of future difficulties when designing a new
+software product or feature; in which case, it is better to revise the
+design than persist in a design that does not account for any newly
+discovered constraints, requirements, or problems.
+\end{itemize*}
+In response to the perceived problems with the pure waterfall model,
+modified waterfall models were introduced, such as "Sashimi (Waterfall
+with Overlapping Phases), Waterfall with Subprojects, and Waterfall
+with Risk Reduction".
+
+Some organizations, such as the United States Department of Defense,
+now have a stated preference against waterfall type methodologies,
+starting with MIL-STD-498, which encourages evolutionary acquisition
+and Iterative and Incremental Development.
+
+While advocates of agile software development argue the waterfall
+model is an ineffective process for developing software, some sceptics
+suggest that the waterfall model is a false argument used purely to
+market alternative development methodologies.
+
+
+Opinion ahead.
+
+
+
+
+linear or waterfall
+iterative
+agile
+
+emerging design
+
