@@ -9,12 +9,12 @@ The participating students in autumn 2015 are:
  - Borian Brückner (borian)
  - Ennyo Feller (Ennyo)
  - Ron Gebauer (Mazorius)
- - Gonzalez Miguel (MyRealityCoding)
+ - Miguel Gonzalez Sanchez (MyRealityCoding)
  - Nils Heyer (TechLogic)
  - Jan Kerkenhoff (kerko)
  - Christian Neumann (C0nvict42)
  - Jonas Verhoelen (JonasPriest)
  - Maximilian Walter (ko08ok)
 
-The teachers are Pieter van den Hombergh (homberghp) and Ferd van Odenhoven.
+The teachers are Pieter van den Hombergh (homberghp) and Ferd van Odenhoven (odenhovenf).
 
