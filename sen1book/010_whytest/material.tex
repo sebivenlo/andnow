@@ -37,7 +37,7 @@ want all of those ingredients to have a quality you can rely on.
   software tests only involve the intended use, and never the
   unintended use. 
 
-  Software may break when it gets input that it does know
+  Software may break when it receives input that it does know
   how to handle, or if fed with input which is forged to trigger
   unwanted effects. Well know, but by no means the only example is the so called
   SQL-injection. SQL-injections depend
@@ -48,7 +48,6 @@ want all of those ingredients to have a quality you can rely on.
 \section{Complexity}
 Applying limited time to obtain insight into a complex system will only provide limited insight.
 Most naturally this will lead to imperfect systems and errors.\cite{vig2006}.
-.
 
 \section{Software Quality}
 When you cook, you want the ingredients to be healthy and wholesome.
@@ -57,9 +56,9 @@ behave as expected, otherwise executing your recipe will not  produce
 the desired result. 
 
 Same for software parts, be it classes, libraries, designs or services.
-This means that the quality of the software is measured in terms of
+This means that the quality of software is measured in terms of
 \begin{itemize}
-\item Understand-ability
+\item Understandability
 \item (Re)usability
 \item reliability
 \item \ldots
@@ -79,8 +78,8 @@ or into each other, to see how that car deals with unwanted circumstances.
 They test by intending to break it, to ensure that the failure is
 sufficiently graceful to cause no harm to passenger or innocent bystander.
 
-\marginpar{War: Aim for maximum destruction}
 
+%\marginpar{War: Aim for maximum destruction}
 Of course, ``normal'' use is also tested, to ensure that the user
 experience is what may be expected of the intended quality level. Like in the car industry, where it can go as far as testing the sound of the doors closing.
 
@@ -90,15 +89,15 @@ So should software testers.
 \item but also survives un-purposeful (ab)use.
 \end{itemize*}
 In the later case, in particular the survival, safety and security of the environment is
-paramount. All to often a weak spot or vulnerability in an
+paramount. All too often a weak spot or vulnerability in an
 application or library exposes risk to the operating system, files or
-file systems of the system the application runs on. Example are
+file systems of the system that the application is running on. Example are
 numerous. It might come unexpected, but a picture (e.g. a jpeg file)
 can be forged to make an picture handling application crash or worse, execute alien, malicious code, hidden inside the picture.
 
 \section{Analyse and Design Top Down, Assemble Bottom Up}
 Developing software invariably starts with proper understanding of the problem to be solved.
-All to often, proper analysis is skipped, because the developer~\footnote{Or his representative} are biased by a \textit{hammer and nail} view on the world. If my tool is a hammer, all problems tend to look like a nail.
+All too often, proper analysis is skipped, because the developer~\footnote{Or his representative} are biased by a \textit{hammer and nail} view on the world. If my tool is a hammer, all problems tend to look like a nail.
 
 % do not yet know where to place this.
 % encapsulation also promotes ignorance, which much be allowed and

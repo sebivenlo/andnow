@@ -24,6 +24,7 @@ a4paper]{geometry}
 \usepackage{lipsum}
 \usepackage[color={0.234 0.867 0.211}]{pdfcomment}
 \definecolor{lgray}{rgb}{.9,.9,.9}
+\usetikzlibrary{shadows}
 \usepackage[framemethod=TikZ]{mdframed}
 %\usepackage[colorlinks=true]{hyperref}
 
@@ -34,7 +35,7 @@ a4paper]{geometry}
 
 \newenvironment{textbox}[1]{%
   \begin{floattextbox}[tb]%
-      \begin{mdframed}[roundcorner=10pt,backgroundcolor=blue!10]
+      \begin{mdframed}[roundcorner=5pt,backgroundcolor=blue!10,shadow=true]
       \caption{#1}
       }
       {\end{mdframed}\end{floattextbox}

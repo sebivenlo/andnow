@@ -10,5 +10,5 @@ sebibook.pdf: main.tex */material.tex
 
 clean:
 	texclean
-	rm sebibook.pdf
+	rm -f sebibook.pdf
 
