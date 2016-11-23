@@ -1,14 +1,93 @@
 \providecommand\docroot{../}
 \documentclass[\docroot/main]{subfiles}
 \begin{document}
-\chapter{Test Strategy}
-Static and Dynamic.
+\chapter{Fantastic Bugs and Where To Find Them}
+
+The purpose of tests is to find bugs. Period. No proof of correctness
+or other guarantee can be derived from that. So what is the point?
+
+Well, we software engineers are humans, just as those people at HRM or
+Sales. So we err. The fruit of any labor is not just some
+functionality, feature or improvement, but also errors, faults. Of
+course the number of our errors can be reduced by working very
+precisely, and check and double check every little step we take.
+
+This would reduce our speed, in agile methods often referred to as
+velocity, to almost a grinding halt. Get better programmers then. Adds
+to the cost.
+
+So lets go hunt some bugs.
+
+\section{Bug Hunt Strategies}
+To hunt bugs, you must first find them. Like their living brethren,
+bugs exhibit behaviors that can help us to devise some strategies to
+find them. If we can spot their typical habitat, the likeliness of
+finding them increases. 
+
+Of course this analogy between programming computer bugs and living
+beasts can only go so far, but the analogy can help us remember.
+
+Bugs come in different kinds. As an example the
+\textit{OfByOne}\footnote{Visiting too many or too few elements} or
+\textit{fence post}\footnote{How many fence parts are there between 10
+fence posts. And how many if the its to enclose an area?} bug typically occurs whenever the programmer
+counts in steps as in a 
+for loop. Getting the first and the last element index right is
+sometimes no trivial. You have an extra handicap if your program needs
+to bridge the gap between computer language cultures, like Java on the
+one side and \textsf{SQL} via \textsf{JDBC} on the other. Java is of the C-family of languages in
+which the lowest index is typically 0, the highest length-1, whereas  In SQL
+the first index is 1, and you stop at last.
+
+The OfByOne bug can be found near the boundaries of the range of valid
+values. Also see \ref{sec:boundary}.
+
+\subsection{Static or Dynamic}
+Finding bugs can be done in two ways: Inspect the code (in terms of
+the entomologist: scan the likely habitat) by ``reading it'' and try
+to identify flaws. You have a few options here:
+\begin{itemize}
+\item Read by humans. We call this code review, for which there are
+  several approaches. We will come to that further on in section\ref{sec:inspectionreview}
+\item Read by computer, in particular the compiler This is mainly syntax checking and to a
+  limited degree semantics checking. Depending on the kind of
+  language, you may have a little or a lot of help here:
+  \begin{description}
+  \item[Weakly typed languages] offer little help here. They are very
+    relaxed on what you can write and how to mix values and
+    types. Often there are no real types, or only a few with few
+    possibilities in the way of detecting problems. The resolve of the
+    weakly typed language will be: The programmer will know what he is
+    doing.
+  \item[Strongly typed languages] I would say the stricter the
+    better. They are very strict on what and how you can declare types
+    and assign or pass on values. They will NOT allow you to put a
+    square peg in a round hole, and sometimes appear very stubborn or
+    pedantic. In most cases, the compiler is right.
+  \end{description}
+\item Machine or computer inspection. This is sometimes called
+  ``linting'' as in using the lint tool. Lint is the word for fluff or
+  flock or hair. The stuff that collects in your 
+  belly-button. Typically unwanted but ever present. A lint-program
+  typically looks out for iffy or suspicious code, but has a different
+  job as the compiler has. Typical errors a lint-program may find
+  \textit{is use before assignment}.
+\end{itemize}
+
+
 Static tools
 Dynamic: execution.
 
-Testing is labour, so it involves costs. This also implies for the
-time to write the tests and in the last place, the time it takes to
-execute the tests.
+----
+
+Testing is labor, so it involves costs. This also applies to the
+time needed to write the test-plans in the first place, and in the last
+place, the time it takes to execute the tests. Testing should be done
+according to some plan or at least with some (acquired by experience)
+intuition. Executing such plan manually can be labor intensive, which
+will add to the cost and hence make executing the tests less attractive.
+
+
 
 By this token, testing has its own economy: Is the effort payed by the
 advantage achieved?
